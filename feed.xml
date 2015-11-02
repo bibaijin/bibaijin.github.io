@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>金比白的个人博客</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Nov 2015 00:18:10 +0800</pubDate>
-    <lastBuildDate>Tue, 03 Nov 2015 00:18:10 +0800</lastBuildDate>
+    <link>http://bibaijin.github.io/blog/</link>
+    <atom:link href="http://bibaijin.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 03 Nov 2015 00:18:45 +0800</pubDate>
+    <lastBuildDate>Tue, 03 Nov 2015 00:18:45 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 03 Nov 2015 00:08:17 +0800</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/11/03/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/11/03/welcome-to-jekyll.html</guid>
+        <link>http://bibaijin.github.io/blog/jekyll/update/2015/11/03/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://bibaijin.github.io/blog/jekyll/update/2015/11/03/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
