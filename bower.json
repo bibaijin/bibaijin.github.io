@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "homepage": "https://github.com/bibaijin/blog",
+  "authors": [
+    "bibaijin <bibaijin@gmail.com>"
+  ],
+  "description": "my blog",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
