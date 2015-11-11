@@ -24,21 +24,36 @@
         <header>
             <h1 class="logo" onclick="document.location.href='/';">
                 <a href="/">
-                    <img src="/img/signature.jpg" width="160" height="50" alt="金比白">
+                    金比白
                 </a>
             </h1>
             <ul class="navigation">
                 <li>
+                    <a href="/">
+                        首页
+                    </a>
+                </li>
+                <li>
                     <a href="/archive/"{% if page.url contains "/archive/" %}
                        class="active"{% endif %}
-                       title="归档文章">
+                       title="归档">
                         归档
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects/">
+                        项目
+                    </a>
+                </li>
+                <li>
+                    <a href="tutorial">
+                        技术分享
                     </a>
                 </li>
                 <li>
                     <a href="/about/"{% if page.url contains "/about/" %}
                        class="active"{% endif %}
-                       title="关于">
+                       title="关于我">
                         关于我
                     </a>
                 </li>
