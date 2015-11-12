@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "homepage": "https://github.com/bibaijin/blog",
+  "homepage": "https://github.com/bibaijin/bibaijin.github.io",
   "authors": [
     "bibaijin <bibaijin@gmail.com>"
   ],
@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "materialize": "~0.97.2"
   }
 }
