@@ -24,6 +24,5 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "materialize": "~0.97.2"
-  },
-  "directory": "_bower_components"
+  }
 }
