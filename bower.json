@@ -17,12 +17,13 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    _"bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
     "materialize": "~0.97.2"
-  }
+  },
+  "directory": "_bower_components"
 }
