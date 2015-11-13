@@ -1,35 +1,8 @@
 @import "_materialize-sass/materialize";
 
-$font-stack: "Times New Roman", Georgia, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-$page-background-color: color("grey", "lighten-2");
-$page-width: 1024px;
-$navbar-color: color("grey", "darken-1");
+@import "components/variables";
 
-body {
-    font-family: $font-stack;
-    background-color: $page-background-color;
-    max-width: $page-width;
-    margin: auto;
-    padding: 30px 50px 30px 50px;
-}
-
-nav {
-    a:link, a:visited {
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
-        color: black;
-    }
-    ul.hide-on-med-and-down {
-        li {
-            transition: all 0s ease 0s;
-            a:link, a:visited {
-                color: $navbar-color;
-            }
-            a:hover, a:active {
-                color: black;
-            }
-        }
-    }
-}
+@import "components/global";
+@import "components/navbar";
+@import "components/cards";
+@import "components/grid";

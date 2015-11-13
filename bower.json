@@ -1,28 +1,29 @@
 {
-  "name": "blog",
-  "homepage": "https://github.com/bibaijin/bibaijin.github.io",
-  "authors": [
-    "bibaijin <bibaijin@gmail.com>"
-  ],
-  "description": "my blog",
-  "main": "",
-  "moduleType": [
-    "globals"
-  ],
-  "keywords": [
-    "blog"
-  ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    _"bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "~3.3.5",
-    "materialize": "~0.97.2"
-  }
+    "name": "blog",
+    "homepage": "https://github.com/bibaijin/bibaijin.github.io",
+    "authors": [
+        "bibaijin <bibaijin@gmail.com>"
+    ],
+    "description": "my blog",
+    "main": "",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "blog"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.3.5",
+        "materialize": "~0.97.2",
+        "font-awesome": "~4.4.0"
+    }
 }
