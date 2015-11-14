@@ -14,11 +14,16 @@ url: "https://bibaijin.github.io" # the base hostname & protocol for your site
 github_username:  bibaijin
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
+highlighter: pygments
 
+# custom
 defaults:
   -
     scope:
       path: ""
     values:
       layout: "default"
+
+kramdown:
+  input: GFM
