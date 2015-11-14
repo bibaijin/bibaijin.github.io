@@ -1,1 +1,4 @@
 author: 金比白
+jquery_dist_path: /bower_components/jquery/dist
+materialize_dist_path: /bower_components/materialize/dist
+font_awesome_path: /bower_components/font-awesome
