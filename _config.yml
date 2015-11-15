@@ -15,7 +15,6 @@ github_username:  bibaijin
 
 # Build settings
 markdown: rdiscount
-highlighter: pygments
 
 # custom
 defaults:
@@ -24,6 +23,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-
-kramdown:
-  input: GFM
