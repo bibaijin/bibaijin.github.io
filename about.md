@@ -9,32 +9,43 @@ description: 关于
 
 # 声明
 
-本博客的网站样式受到 [Rasmus Andersson 的博客](http://rsms.me)启发。
+本博客的网站样式受 [Rasmus Andersson 的博客](http://rsms.me)启发，采用
+[materialize](http://materializecss.com/) 实现。
 
 # TODO
 
+## 充实内容
 
-+ 写几篇博客
-+ layout: share icon
-+ post.html
-    + date
-    + author
++ 博客
 
++ 图片
 
-```sh
-ls
-```
+## 优化样式
 
-> 引用
-> 发射机
+### 全局
 
-{% highlight sh %}
-echo "hello"
-ls
-{% endhighlight %}
++ 搜索
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+### 首页
+
++ 博客列表
+    - 日期
+    - 作者
+    - 分享按钮：RSS，邮件，微博，微信，GitHub
+    - 页数
+
+### 归档
+
++ 所有文章的列表
+
++ 搜索
+
+### 项目
+
++ 补全
+
+### 文档
+
++ 重新组织结构
+
++ 充实内容

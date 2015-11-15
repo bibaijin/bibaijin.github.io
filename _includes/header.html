@@ -1,19 +1,24 @@
 <header>
-    <nav class="z-depth-0 transparent">
+    <nav class="hide-on-med-and-down z-depth-0 transparent">
         <div class="nav-wrapper">
             <a href="/" class="brand-logo">
-                <img src="/img/signature.png"
-                     alt="{{ site.data.conf.author }}}" />
+                {{ site.data.conf.author }}
             </a>
-            <a href="#" data-activates="nav-mobile"
-                class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right">
                 {% for item in site.data.navbar_items %}
                 <li><a href="{{ item.url }}">{{ item.title }}</a></li>
                 {% endfor %}
             </ul>
+        </div>
+    </nav>
+    <nav class="hide-on-large-only grey lighten-1">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+                {{ site.data.conf.author }}
+            </a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
             <ul id="nav-mobile" class="side-nav">
                 {% for item in site.data.navbar_items %}
                 <li><a href="{{ item.url }}">{{ item.title }}</a></li>
@@ -22,3 +27,7 @@
         </div>
     </nav>
 </header>
+
+<div class="hide-on-large-only">
+    <br>
+</div>

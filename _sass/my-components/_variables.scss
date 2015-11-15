@@ -1,8 +1,11 @@
-$font-stack: "Times New Roman", Georgia, "Hiragino Sans GB", "SimSun", "WenQuanYi Micro Hei", sans-serif;
+$font-stack: "Roboto", sans-serif;
+$FZ-font-path: "/font/FangZheng/";
 $page-background-color: color("grey", "lighten-2");
 $large-page-width: 1024px;
 $navbar-color: color("grey", "darken-1");
-$footer-background-color: color("grey", "lighten-1");
+$small-navbar-background-color: color("grey", "lighten-1");
+$large-footer-background-color: transparent;
+$small-footer-background-color: color("grey", "lighten-1");
 $footer-color: color("grey", "darken-3");
 $footer-a-color: color("grey", "darken-4");
 $footer-a-hover-color: black;

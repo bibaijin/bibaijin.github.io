@@ -1,5 +1,8 @@
-body {
+html {
     font-family: $font-stack;
+}
+
+body {
     font-size: medium;
     background-color: $page-background-color;
     @media #{$large-and-up} {
@@ -9,7 +12,6 @@ body {
     }
     @media #{$medium-and-down} {
         margin: auto;
-        padding: 0px 5px 0px 5px;
     }
 
     // sticky footer
@@ -19,7 +21,46 @@ body {
 }
 
 nav {
-    padding: 0 0 70px 0;
+    @media #{$large-and-up} {
+        padding: 0 0 70px 0;
+        a.brand-logo {
+            transition-duration: .3s;
+            &:hover {
+                transform: translateY(2px);
+            }
+        }
+        ul {
+            padding: 0;
+            li {
+                list-style-type: none;
+                a:link, a:visited {
+                    color: $navbar-color;
+                }
+                a:hover, a:active {
+                    color: black;
+                }
+            }
+            li:hover {
+                background-color: transparent;
+            }
+            a {
+                padding: 0 0 0 30px;
+            }
+        }
+    }
+    @media #{$medium-and-down} {
+        padding: 0;
+    }
+    a.brand-logo {
+        font-family: "FZSuXinShiLiuKai";
+        font-size: 260%;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
     a:link, a:visited {
         text-decoration: none;
         color: black;
@@ -27,56 +68,32 @@ nav {
     a:hover {
         color: black;
     }
-    ul.hide-on-med-and-down {
-        li {
-            a:link, a:visited {
-                color: $navbar-color;
-            }
-            a:hover, a:active {
-                color: black;
-            }
-        }
-        li:hover {
-            background-color: transparent;
-        }
-        a {
-            padding: 0 0 0 30px;
-        }
-    }
-    @media #{$large-and-up} {
-        a.brand-logo {
-            transition-duration: .3s;
-            &:hover {
-                transform: translateY(2px);
-            }
-        }
-    }
-    a.brand-logo {
-        img {
-            height: $logo-height;
-            vertical-align: -10px;
-        }
-    }
 }
 
 main {
     flex: 1 0 auto;
 }
 
-img {
-    max-width: 100%;
-    margin: auto;
-}
-
 footer.page-footer {
-    background-color: $footer-background-color;
+    padding-top: 15px;
+    img {
+        align: middle;
+        padding: 0 0 0.5em 0;
+    }
     .footer-copyright {
         color: $footer-color;
-        margin: auto;
-        overflow: auto;
-        img {
-            vertical-align: middle;
+        height: auto;
+        padding: 0.5em 0 0.5em 0;
+        line-height: 1.5em;
+    }
+    @media #{$large-and-up} {
+        background-color: $large-footer-background-color;
+        .footer-copyright {
+            background-color: $large-footer-background-color;
         }
+    }
+    @media #{$medium-and-down} {
+        background-color: $small-footer-background-color;
         a:link, a:visited {
             color: $footer-a-color;
         }
@@ -84,19 +101,6 @@ footer.page-footer {
             color: $footer-a-hover-color;
         }
     }
-    @media #{$medium-and-down} {
-        .footer-copyright {
-            height: auto;
-            line-height: 20px;
-            img {
-                padding: 10px 0 5px 0;
-            }
-        }
-    }
-}
-
-h1, h2, h3 {
-    font-family: sans-serif;
 }
 
 h1 {
@@ -111,13 +115,68 @@ h3 {
     font-size: large;
 }
 
+body {
+    counter-reset: chapter;
+}
+
+h1 {
+    counter-reset: section;
+}
+
+h2 {
+    counter-reset: subsection;
+}
+
+h3 {
+    counter-reset: subsubsection;
+}
+
+h1:before {
+    content: counter(chapter) ". \00a0";
+    counter-increment: chapter;
+}
+
+h2:before {
+    content: counter(chapter) "." counter(section) " \00a0";
+    counter-increment: section;
+}
+
+h3:before {
+    content: counter(chapter) "." counter(section) "." counter(subsection) " \00a0";
+    counter-increment: subsection;
+}
+
+h4:before {
+    content: counter(chapter) "." counter(section) "." counter(subsection) "." counter(subsubsection) " \00a0";
+    counter-increment: subsubsection;
+}
+
 p {
     text-indent: 2em;
 }
 
 ul {
-    list-style-type: disc;
-    ul {
-        list-style-type: circle;
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 15px;
+    li {
+        list-style-type: square;
+        p {
+            text-indent: 0;
+        }
     }
+    ul {
+        padding-left: 25px;
+        li {
+            list-style-type: disc;
+        }
+        ul li {
+            list-style-type: circle;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
 }
