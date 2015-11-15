@@ -2,8 +2,6 @@
 layout: page
 title: 关于
 permalink: /about/
-img_src: /img/wallhaven-164955.jpg
-img_alt: 吉祥物
 description: 关于
 ---
 
@@ -16,7 +14,6 @@ description: 关于
 
 + 充实内容
     + 博客
-    + 图片
 
 + 优化样式
     + 全局
@@ -28,8 +25,6 @@ description: 关于
     + 归档
         + 所有文章的列表
         + 搜索
-    + 项目
-        + 补全
     + 文档
         + 重新组织结构
         + 充实内容

@@ -109,44 +109,45 @@ h3 {
     font-size: large;
 }
 
-body {
-    counter-reset: chapter;
-}
+/* body { */
+/*     counter-reset: chapter; */
+/* } */
 
-h1 {
-    counter-reset: section;
-}
+/* h1 { */
+/*     counter-reset: section; */
+/* } */
 
-h2 {
-    counter-reset: subsection;
-}
+/* h2 { */
+/*     counter-reset: subsection; */
+/* } */
 
-h3 {
-    counter-reset: subsubsection;
-}
+/* h3 { */
+/*     counter-reset: subsubsection; */
+/* } */
 
-h1:before {
-    content: counter(chapter) ". \00a0";
-    counter-increment: chapter;
-}
+/* h1:before { */
+/*     content: counter(chapter) ". \00a0"; */
+/*     counter-increment: chapter; */
+/* } */
 
-h2:before {
-    content: counter(chapter) "." counter(section) " \00a0";
-    counter-increment: section;
-}
+/* h2:before { */
+/*     content: counter(chapter) "." counter(section) " \00a0"; */
+/*     counter-increment: section; */
+/* } */
 
-h3:before {
-    content: counter(chapter) "." counter(section) "." counter(subsection) " \00a0";
-    counter-increment: subsection;
-}
+/* h3:before { */
+/*     content: counter(chapter) "." counter(section) "." counter(subsection) " \00a0"; */
+/*     counter-increment: subsection; */
+/* } */
 
-h4:before {
-    content: counter(chapter) "." counter(section) "." counter(subsection) "." counter(subsubsection) " \00a0";
-    counter-increment: subsubsection;
-}
+/* h4:before { */
+/*     content: counter(chapter) "." counter(section) "." counter(subsection) "." counter(subsubsection) " \00a0"; */
+/*     counter-increment: subsubsection; */
+/* } */
 
 p {
     text-indent: 2em;
+    padding: 0.5em 0 0.5em 0;
 }
 
 ul {
@@ -170,7 +171,29 @@ ul {
     }
 }
 
+ol {
+    p {
+        text-indent: 0;
+    }
+    line-height: 0.6em;
+}
+
 img {
     max-width: 100%;
     margin: auto;
+}
+
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    background-color: $blockquote-background-color;
+    padding: 0.5em 1em 0.5em 1em;
+    border-left: 5px solid $blockquote-border-color;
+}
+
+pre {
+    background-color: $code-background-color;
+    padding: 1em 2em 1em 2em;
 }
