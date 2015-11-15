@@ -2,23 +2,21 @@
 layout: page
 title: 文档
 permalink: /tutorial/
+img_src: /img/tutorial.jpg
+img_alt: tutorial
+description: 我的文档
 ---
 
-# Haskell
++ [Haskell]({{ site.url}}/tutorial-haskell)
 
-+ Yesod
-+ Shelly
-+ 读书笔记
++ [LaTeX]({{ site.url}}/tutorial-LaTeX)
 
-# LaTeX
++ [Python]({{ site.url}}/tutorial-python)
 
-# Python
++ [Linux]({{ site.url}}/tutorial-linux)
 
-+ numpy
-+ scipy
-+ matplotlib
++ [Database]({{ site.url}}/tutorial-database)
 
-# Linux
++ [Git]({{ site.url}}/tutorial-git)
 
-+ OS
-+ Shell
++ [Ruby]({{ site.url}}/tutorial-ruby)

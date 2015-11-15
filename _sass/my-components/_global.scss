@@ -94,12 +94,6 @@ footer.page-footer {
     }
     @media #{$medium-and-down} {
         background-color: $small-footer-background-color;
-        a:link, a:visited {
-            color: $footer-a-color;
-        }
-        a:hover {
-            color: $footer-a-hover-color;
-        }
     }
 }
 
