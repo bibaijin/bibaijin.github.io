@@ -85,6 +85,7 @@ footer.page-footer {
         height: auto;
         padding: 0.5em 0 0.5em 0;
         line-height: 1.5em;
+        font-family: "Robot";
     }
     @media #{$large-and-up} {
         background-color: $large-footer-background-color;
@@ -211,6 +212,7 @@ blockquote {
 pre {
     background-color: $pre-background-color;
     padding: 1em 2em 1em 2em;
+    border-radius: 5px;
     code {
         background-color: $pre-background-color;
         color: $pre-color;
